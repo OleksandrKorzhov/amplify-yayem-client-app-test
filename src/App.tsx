@@ -16,7 +16,8 @@ function App() {
         </a>
       </div>
       <h1>Vite + React / develop</h1>
-      <h1>{process.env.REACT_APP_TEST_ENV_VAR}</h1>
+      {/*@TODO: debug using env vars with Amplify*/}
+      <h1>{import.meta.env.REACT_APP_TEST_ENV_VAR}</h1>
       <div className="card">
         <button onClick={() => setCount((count) => count + 1)}>
           count is {count}
